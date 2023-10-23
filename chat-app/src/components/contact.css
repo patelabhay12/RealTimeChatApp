@@ -1,0 +1,105 @@
+.Container3{
+    display: grid;
+    grid-template-rows:10% 75% 15%;
+    overflow: hidden;
+    background-color: #080420;
+}
+
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1;
+}
+
+.brand img{
+    height: 2rem;
+}
+.brand h3{
+    color: white;
+    text-transform: uppercase;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    gap: 0.8rem;
+}
+
+.contacts::-webkit-scrollbar{
+    width: 0.2rem;
+
+}
+
+.contact ::-webkit-scrollbar-thumb{
+    background-color: #ffffff39;
+    width: 0.1rem;
+    border-radius: 1rem;
+}
+.contact{
+    background-color: #ffffff39;
+    min-height: 4rem;
+    width: 90%;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    gap: 1rem;
+    align-items: center;
+    display: flex;
+    transition: 0.5s ease-in-out;
+}
+
+.contact .avatar img{
+    height: 3rem;
+}
+
+.username h3{
+    color: white;
+}
+
+.contacts .selected {
+    background-color: #9186f3;
+    border: none;
+}
+
+.current-user{
+    background-color: #0d0d30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.current-user .avatar img{
+    height: 4rem;
+    max-inline-size: 100%;
+}
+.current-user .username h2{
+    color: white;
+}
+
+
+@media screen and (max-width:1000px){
+    .contact{
+        gap: 0.2rem;
+    }
+    .current-user {
+        gap: 0.5rem;
+    }
+    .username h2{
+        font-size: 1rem;
+    }
+    .brand{
+        gap: 0.5rem;
+    }
+    .brand img{
+       height:  1rem;
+    }
+    .brand h3{
+        font-size: 0.2rem;
+    }
+    .contact .avatar img{
+        height: 2rem;
+    }
+}
